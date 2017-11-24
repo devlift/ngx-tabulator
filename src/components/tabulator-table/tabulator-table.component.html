@@ -1,0 +1,24 @@
+<table class="tabulator">
+	<thead *ngIf="columns">
+		<tr class="tabulator-tr">
+			<th *ngFor="let col of columns" class="tabulator-th" (click)="sort(col)">
+				{{col.label}}
+			</th>
+		</tr>
+	</thead>
+	<tbody *ngIf="columns">
+		<tr *ngFor="let row of rows" class="tabulator-tr">
+			<td *ngFor="let col of columns" class="tabulator-td">
+				<ng-container *ngIf="col.format && col.format === 'Currency'">
+					{{((row[col.name] || col.defaultValue) || '') | currency:'USD':'symbol'}}
+				</ng-container>
+				<ng-container *ngIf="col.format && col.format === 'Date'">
+					{{((row[col.name] || col.defaultValue) || '') | date}}
+				</ng-container>
+				<ng-container *ngIf="!col.format || col.format === 'None'">
+					{{(row[col.name] || col.defaultValue) || ''}}
+				</ng-container>
+			</td>
+		</tr>
+	</tbody>
+</table>
