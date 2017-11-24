@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
-import TableColumn from '../models/table-column.model';
+import TableColumnModel from '../models/table-column.model';
 
 @Injectable()
 export class TabulatorService {
-	public build( model: any ): TableColumn[] {
-		let table: TableColumn[] = [];
+	public build( model: any ): TableColumnModel[] {
+		let table: TableColumnModel[] = [];
 
 		let instance: any;
 		if( model ) {

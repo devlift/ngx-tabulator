@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import TableColumn from '../models/table-column.model';
+import TableColumnModel from '../models/table-column.model';
 var TabulatorService = /** @class */ (function () {
     function TabulatorService() {
     }

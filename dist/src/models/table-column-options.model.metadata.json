@@ -1,1 +1,1 @@
-[{"__symbolic":"module","version":4,"metadata":{"TableColumnOptions":{"__symbolic":"interface"}},"exports":[{"from":"./table-column-format.model","export":["TableColumnFormat"]}]}]
+[{"__symbolic":"module","version":4,"metadata":{"TableColumnOptions":{"__symbolic":"interface"}}}]

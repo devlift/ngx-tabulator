@@ -1,4 +1,4 @@
-import TableColumn from '../models/table-column.model';
+import TableColumnModel from '../models/table-column.model';
 import TableColumnOptions from '../models/table-column-options.model';
 export var TableColumn = function (label, options) {
     var o = options || {};

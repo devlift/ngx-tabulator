@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import TableColumn from '../../models/table-column.model';
+import TableColumnModel from '../../models/table-column.model';
 var TabulatorTableComponent = /** @class */ (function () {
     function TabulatorTableComponent() {
     }

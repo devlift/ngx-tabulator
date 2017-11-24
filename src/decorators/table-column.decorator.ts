@@ -1,4 +1,4 @@
-import TableColumn from '../models/table-column.model';
+import TableColumnModel from '../models/table-column.model';
 import TableColumnOptions from '../models/table-column-options.model';
 
 export const TableColumn = (label?: string, options?: TableColumnOptions) => {

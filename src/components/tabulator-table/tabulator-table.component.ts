@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import TableColumn from '../../models/table-column.model';
+import TableColumnModel from '../../models/table-column.model';
 
 @Component({
 	selector: 'tabulator',
@@ -7,7 +7,7 @@ import TableColumn from '../../models/table-column.model';
 	moduleId: module.id
 })
 export class TabulatorTableComponent {
-	@Input() columns: TableColumn[] = [];
+	@Input() columns: TableColumnModel[] = [];
 	@Input() rows: any[] = [];
 
 	@Input() sortable: boolean = true;
@@ -15,7 +15,7 @@ export class TabulatorTableComponent {
 	
 	constructor() {}
 
-	sort(col: TableColumn) {
+	sort(col: TableColumnModel) {
 		if( this.sortable ) {
 			let key = col.name;
 			if( this.desc ) {
