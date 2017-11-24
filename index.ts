@@ -1,5 +1,3 @@
-/// <reference path="./node_modules/@types/node/index.d.ts" />
-
 export { TabulatorModule } from './src/tabulator.module';
 export { TabulatorTableComponent } from './src/components/tabulator-table/tabulator-table.component';
 export { TabulatorService } from './src/services/tabulator.service';

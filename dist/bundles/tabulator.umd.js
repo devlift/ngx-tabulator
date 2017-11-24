@@ -118,8 +118,6 @@ var TableColumn = function (label, options) {
     TableColumnFormat["Date"] = "Date";
 })(exports.TableColumnFormat || (exports.TableColumnFormat = {}));
 
-/// <reference path="./node_modules/@types/node/index.d.ts" />
-
 exports.TabulatorModule = TabulatorModule;
 exports.TabulatorTableComponent = TabulatorTableComponent;
 exports.TabulatorService = TabulatorService;
