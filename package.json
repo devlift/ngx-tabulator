@@ -1,6 +1,6 @@
 {
 	"name": "ngx-tabulator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "",
 	"main": "dist/bundles/tabulator.umd.min.js",
 	"module": "dist/index.js",
@@ -12,8 +12,17 @@
 		"minify": "uglifyjs dist/bundles/tabulator.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/tabulator.umd.min.js",
 		"build": "npm run transpile && npm run package && npm run minify"
 	},
-	"author": "",
+	"author": "Devlift Media",
 	"license": "ISC",
+	"homepage": "https://github.com/devlift/ngx-formify",
+	"bugs": "https://github.com/devlift/ngx-formify/issues",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/devlift/ngx-formify.git"
+	},
+	"contributors": [
+	  { "name": "Kyle Windsor", "email": "kyle@kylewindsor.io", "url": "http://kylewindsor.io" }
+	],
 	"devDependencies": {
 		"@angular/cli": "^1.5.2",
 		"@angular/compiler": "^5.0.2",
