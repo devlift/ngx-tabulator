@@ -6,3 +6,5 @@ export default interface TableColumn {
 	format?: TableColumnFormat;
 	defaultValue?: any;
 }
+
+export { TableColumnFormat } from './table-column-format.model';
